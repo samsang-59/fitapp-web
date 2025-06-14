@@ -1,3 +1,5 @@
+/* this is the starting of landing page */
+
 body{
     box-sizing: border-box;
 }
@@ -110,5 +112,173 @@ body{
     font-size: 1rem;
     height: 40px;
     text-align: center;
+  }
+}
+
+/* this is the ending for landing page */
+
+/* this is the starting for login page */
+
+.login-container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #6bcae5, #dbdd7b);
+}
+
+.login-content-box{
+  width: 500px;
+  min-height: 300px;
+  padding: 30px 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.fitapp{
+  width: 200px;
+  min-height: 80px;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 2rem;
+  /* color:#fff ; */
+  font-weight: bold;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Login{
+  width: 300px;
+  min-height:30px;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.5rem;
+  /* color: #fff; */
+  font-weight: bold;
+  /* background-color: blue; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+.input-container{
+  width: 100%;
+  min-height:35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 7px;
+  /* background-color: red; */
+}
+.input-container input{
+  width: 100%;
+  height: 35px;
+  padding: 5px;
+  border-radius: 8px;
+  border: solid 1px white;
+  background-color: white;
+  box-shadow:inset 0 0 5px rgba(0, 0, 0, 0.1) ;
+  font-size: 1rem;
+  color: black;
+  transition: all 0.3s ease;
+}
+.input-container input:hover{
+  box-shadow:  0 0 10px rgba(0,0,0,0.3);
+}
+
+.login-button{
+  width: 100%;
+  height: 40px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px;
+  text-align: center;
+}
+
+.button-link {
+  width: 100%;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: greenyellow;
+  color: black;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.button-link:hover {
+  background-color: rgb(49, 192, 10);
+}
+
+.forgot-password{
+  width: 100%;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.forgot-password a{
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.forgot-password a:hover{
+  color:rgb(49, 192, 10);
+}
+
+.signup-link{
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 338px) and (max-width:574px){
+  .login-content-box {
+    height: 500px; /* ya jitni tu chahe */
+    width: 90%;
+    padding: 25px 15px;
+  }
+
+  .fitapp {
+    font-size: 1.5rem;
+  }
+
+  .Login {
+    font-size: 1.2rem;
+  }
+
+  .input-container input {
+    height: 35px;
+    font-size: 1rem;
+  }
+
+  .login-button .button-link {
+    height: 35px;
+    font-size: 1rem;
+  }
+
+  .forgot-password,
+  .signup-link {
+    font-size: 0.9rem;
   }
 }
