@@ -384,3 +384,99 @@ body{
     font-size: 0.9rem;
   }
 }
+
+/* this is the ending for signup page */
+/* this is the starting page for questionnare page */
+
+.question-container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f0e68c, #add8e6);
+}
+
+.question-content-box{
+  width:800px;
+  min-height: 400px;
+  padding: 30px 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.personal-questionnaire{
+  width: 100%;
+  height: 40px;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.input-box{
+  padding: 5px;
+}
+
+.input-box input{
+  padding: 3px;
+  border: none;
+  border-radius: 5px;
+}
+
+.input-box label{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1rem;
+  color: black;
+}
+
+.next{
+  width: 100%;
+  height: 40px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px;
+  text-align: center;
+  background-color: green;
+}
+
+
+@media (max-width: 400px) {
+  .input-box label {
+    display: block;
+    margin: 6px 0;
+  }
+
+  .input-box input[type="radio"],
+  .input-box input[type="checkbox"] {
+    margin-right: 8px;
+  }
+
+  /* Optional: make the whole form scrollable on small screens */
+  .question-container {
+    height: auto;
+    padding: 20px;
+  }
+
+  .question-content-box {
+    width: 100%;
+    min-height: auto;
+    max-height: 100vh;
+    overflow-y: auto;
+  }
+
+
+  .input-box textarea {
+    width: 100%;
+    max-width: 400px;
+  }
+}

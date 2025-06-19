@@ -7,6 +7,116 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+   
+    <div class="question-container">
+        <div class="question-content-box">
+            <div class="personal-questionnaire">Personal Questionnaire</div>
+            <form action="dashboard.html" method="post">
+               
+                    <!-- name asked -->
+                     <div class="input-box box">
+                        <label for="Name">Full Name</label> <br>
+                        <input type="text" id="Name" name="Full Name" placeholder="Full Name">
+                     </div>
+
+                    <!-- age asked -->
+                     <div class="input-box box">
+                        <label for="Age">Age</label> <br>
+                        <input type="number" id="Age" name="Age" placeholder="Age">
+                     </div>
+
+                    <!-- height asked -->
+                     <div class="input-box box">
+                        <label for="Height">Height(in cm)</label> <br>
+                        <input type="number" id="Height" name="Height" placeholder="Height">
+                     </div>
+
+                    <!-- weight asked -->
+                     <div class="input-box box">
+                        <label for="Weight">Weight(in kg)</label> <br>
+                        <input type="number" id="Weight" name="Weight" placeholder="Weight">
+                     </div>
+
+                    <!-- activity level options -->
+                     <div class="input-box box">
+                        <label for="Acitvity">Acitvity Level</label> <br>
+                     <select id="goal" name="fitness-goal" required>
+                        <option value="" disabled selected>Select your's</option>
+                        <option value="Sedentary">Sedentary</option>
+                        <option value="Lightly Active">Lightly Active</option>
+                        <option value="Moderately Active">Moderately Active</option>
+                        <option value="Very Active">Very Active</option>
+                    </select>
+                   </div>
+
+                    <!-- fitness goal options  -->
+                     <div class="input-box box">
+                        <label for="goal">What's your fitness goal?</label>
+                        <select id="goal" name="fitness-goal" required>
+                        <option value="" disabled selected>Select your goal</option>
+                        <option value="weight-loss">Lose Weight</option>
+                        <option value="muscle-gain">Gain Muscle</option>
+                        <option value="endurance">Increase Endurance</option>
+                        <option value="flexibility">Improve Flexibility</option>
+                        <option value="overall-health">Overall Health</option>
+                    </select>
+                     </div>
+
+                    <!-- student or employee option -->
+                     <div class="input-box box">
+                     <label for="Occupation">Are you a student or an Employee ?</label> <br>
+                     <label><input type="radio" name="s1" value="student"> student</label>
+                    <label><input type="radio" name="s1" value="Employee"> Employee</label>
+                     </div>
+
+                    <!-- dietary preferences -->
+                     <div class="input-box box">
+                        <label for="dietary">Dietary Preference</label> <br>
+                     <select id="dietary" name="Dietary" required>
+                        <option value="" disabled selected>Select your's</option>
+                        <option value="Vegetarian">Vegetarian</option>
+                        <option value="Non-Vegetarian">Non-Vegetarian</option>
+                        <option value="Vegan">Vegan</option>
+                     </select>   
+                     </div>
+
+                     <!-- daily diet input -->
+                      <div class="input-box box">
+                        <label for="daily diet">What does your daily diet usually include ? </label>
+                      <br>
+                      <textarea name="feedback" rows="4" cols="50" placeholder="Write your message here..."></textarea>
+                      </div>
+
+                      <!-- easily accessible food items -->
+                       <div class="input-box box">
+                        <label for="foods">What food items are easily accessible to you ?</label>
+                       <br>
+                        <label><input type="radio" name="f1" value="milk"> Milk</label>
+                        <label><input type="radio" name="f2" value="Curd"> Curd</label>
+                        <label><input type="radio" name="f3" value="Eggs">Eggs</label>
+                        <label><input type="radio" name="f4" value="Banana"> Banana</label>       
+                        <label><input type="radio" name="f5" value="Fruits"> Fruits</label>
+                        <label><input type="radio" name="f6" value="Others"> Others</label>  
+                       </div>
+                      
+                         <!--meal timings  -->
+                         <div class="input-box box">
+                            <label for="meal timings"> Do you have any fixed meal timings or irregular?</label> <br>
+                         <label><input type="radio" name="t1" value="Fixed"> Fixed timings</label>
+                        <label><input type="radio" name="t1" value="irregular"> irregular</label> 
+                         </div>
+
+                        <!-- food source -->
+                         <div class="input-box box">
+                        <label for="food sources">Do you cook your own food or depend on mess/canteen/tiffin? </label> <br>
+                        <label><input type="radio" name="c1" value="own food"> Cook my own food</label>
+                        <label><input type="radio" name="c1" value="dependent"> Depend on mess/canteen/tiffin</label> 
+                         </div>
+                        
+                        <button type="submit" class="next">Next</button>
+            </form>
+        </div>
+    </div>
+
 </body>
 </html>
