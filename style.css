@@ -480,3 +480,231 @@ body{
     max-width: 400px;
   }
 }
+
+
+/* this is the ending of questionnaire html page */
+/* this is the starting of dashboard html page */
+
+.dashboard-container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, white, rgb(193, 190, 190));
+}
+
+.dashboard-content-box{
+  width: 900px;
+  min-height:500px;
+  padding:10px 10px ;
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.hello{
+  width: 100%;
+  min-height: 40px;
+  color: black;
+  display: flex;
+  padding: 5px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 2rem;
+  margin-bottom:5px;
+}
+
+.time{
+  width: 100%;
+  min-height: 40px;
+  color: rgb(93, 91, 91);
+  display: flex;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size:1rem ;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.summary{
+  width: 100%;
+  height: 40px;
+  color: black;
+  display: flex;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size:1rem;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.workout-diet{
+  width: 100%;
+  min-height: 40px;
+  color: black;
+  display: flex;
+  justify-content:flex-start;
+  padding: 10px;
+  gap: 10px;
+}
+
+.workout, .diet{
+  width: 40%;
+  min-height:40px ;
+  color: black;
+  display: flex;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.2rem;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: whitesmoke;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+.quick-access{
+  width: 100%;
+  min-height:40px ;
+  color: black;
+  display: flex;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.2rem;
+  padding: 5px;
+}
+
+.full-workout-diet-plan{
+  width: 100%;
+  min-height: 40px;
+  color: black;
+  display: flex;
+  justify-content:flex-start;
+  padding: 6px;
+  gap: 10px;
+}
+
+
+.progress-edit{
+  width: 100%;
+  min-height: 40px;
+  color: black;
+  display: flex;
+  justify-content:flex-start;
+  padding: 6px;
+  gap: 10px;
+}
+
+a{
+  width: 40%;
+  min-height:40px ;
+  color: black;
+  display: flex;
+  align-items: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.2rem;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: whitesmoke;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+a:hover{
+   box-shadow: 0 0 5px rgba(0,0,0,0.3);
+   background-color: rgb(198, 198, 198);
+   cursor: pointer;
+}
+
+a img{
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+}
+
+.box{
+  display: flex;
+}
+
+.next-page{
+  /* background-color: yellowgreen; */
+  display: flex;
+  align-items: center;
+  padding: 2px;
+}
+
+
+.motivational-quote{
+  width: 100%;
+  min-height: 40px;
+  color: black;
+  display: flex;
+  padding: 5px;
+  margin-top:10px ;
+}
+
+.quote-box{
+  width: 81%;
+  min-height: 80px;
+  border: solid 1px black;
+  border-radius: 5px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.2rem;
+  padding: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  background-color: whitesmoke;
+}
+
+.quote-box p{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size:1rem;
+  color: rgb(154, 152, 152);
+}
+
+@media (max-width: 768px) {
+  .dashboard-content-box {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .hello, .time, .summary, .quick-access, .motivational-quote {
+    font-size: 1.2rem;
+    padding: 8px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .workout-diet,
+  .full-workout-diet-plan,
+  .progress-edit {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .workout, .diet,
+  .full-workout-diet-plan a,
+  .progress-edit a {
+    width: 90%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .quote-box {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .next-page {
+    padding: 0 5px;
+    font-size: 1rem;
+  }
+
+  a img {
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+  }
+}
